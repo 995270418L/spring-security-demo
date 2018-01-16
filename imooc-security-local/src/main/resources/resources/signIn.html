@@ -1,0 +1,25 @@
+<html>
+<meta charset="UTF-8">
+<head>
+    <title>自定义登陆页面</title>
+</head>
+<body>
+    <form action="/login" method="post">
+        用户名:
+        <input type="text" name="username" /></br>
+        密码:
+        <input type="password" name="password"/></br>
+        验证码:
+        <input type="text" name="imageCode"/><img src="/code/image"/></br>
+        <input type="checkbox" name="remember-me" vakue="true"/> 记住我</br>
+        <input type="submit" value="登陆"/>
+    </form>
+
+    <form action="/authentication/mobile" method="post">
+        手机号:
+        <input type="text" name="mobile" /></br>
+        <input type="text" name="smsCode"/><a href="/code/sms">发送验证码</a></br>
+        <input type="submit" value="登陆"/>
+    </form>
+</body>
+</html>

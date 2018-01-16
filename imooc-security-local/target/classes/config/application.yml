@@ -1,0 +1,31 @@
+spring:
+    application:
+        name: CoreApplication
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        hikari:
+            data-source-properties:
+                cachePrepStmts: true
+                prepStmtCacheSize: 250
+                prepStmtCacheSqlLimit: 2048
+                useServerPrepStmts: true
+        url: jdbc:mysql://localhost:3306/job?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password: shiyue
+server:
+    port: 8888
+
+#debug: true
+
+mybatis-plus:
+    mapper-locations: classpath:mapper/**/*.xml
+
+security:
+  user:
+    name: steve
+    password: steve
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    root: INFO
