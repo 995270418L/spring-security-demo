@@ -1,7 +1,9 @@
 package com.imooc.config.autoConfig;
 
-import com.imooc.qq.QQConnectionFactory;
-import com.imooc.qq.QQProperty;
+
+import com.imooc.social.SocialProperty;
+import com.imooc.social.qq.QQConnectionFactory;
+import com.imooc.social.qq.QQProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.social.SocialAutoConfigurerAdapter;
@@ -13,10 +15,11 @@ import org.springframework.social.connect.ConnectionFactory;
 public class QQAutoConfig extends SocialAutoConfigurerAdapter {
 
     @Autowired
-    private QQProperty qqProperty;
+    private SocialProperty socialProperty;
 
     @Override
     protected ConnectionFactory<?> createConnectionFactory() {
-        return new QQConnectionFactory("qq",qqProperty.getAppId(),qqProperty.getAppSecret());
+        QQProperty qqProperty = socialProperty.getQq();
+        return new QQConnectionFactory(qqProperty.getProviderId(), qqProperty.getAppId(), qqProperty.getAppSecret());
     }
 }

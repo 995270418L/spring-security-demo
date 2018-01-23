@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.imooc.security</groupId>
-    <artifactId>imooc-starter</artifactId>
+    <artifactId>spring-security-demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>imooc-security-core</module>
-        <module>imooc-security-broswer</module>
+        <module>imooc-security-local</module>
+        <module>imooc-security-third-web</module>
         <module>imooc-security-app</module>
         <module>imooc-security-demo</module>
     </modules>
@@ -68,7 +68,7 @@
         <developer>
             <name>steve</name>
             <email>995270418@qq.com</email>
-            <organization>free development</organization>
+            <organization>free development worker(haha)</organization>
         </developer>
     </developers>
 

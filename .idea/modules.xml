@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/imooc-security-demo/imooc-security-demo.iml" filepath="$PROJECT_DIR$/imooc-security-demo/imooc-security-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-local/imooc-security-local.iml" filepath="$PROJECT_DIR$/imooc-security-local/imooc-security-local.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-third-web/imooc-security-third-web.iml" filepath="$PROJECT_DIR$/imooc-security-third-web/imooc-security-third-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/imooc-starter.iml" filepath="$PROJECT_DIR$/imooc-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-security-demo.iml" filepath="$PROJECT_DIR$/spring-security-demo.iml" />
     </modules>
   </component>
 </project>

@@ -1,6 +1,6 @@
 spring:
-  application:
-    name: spring-social-github
+    application:
+        name: spring-social-third-web
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         hikari:
@@ -11,19 +11,22 @@ spring:
                 useServerPrepStmts: true
         url: jdbc:mysql://localhost:3306/job?useUnicode=true&characterEncoding=utf8&useSSL=false
         username: root
-        password: shiyue
-  social:
-    QQ:
-      app-id: 101386962
-      app-secret: 2a0f820407df400b84a854d054be8b6a
+        password: root
+    social:
+        prefix: /login
+        qq:
+            app-id: 101386962
+            app-secret: 2a0f820407df400b84a854d054be8b6a
+            provider-id: qq
 
 mybatis-plus:
-  mapper-locations: classpath:mapper/**/*.xml
+    mapper-locations: classpath:mapper/**/*.xml
 
 server:
-  port: 1025
+    port: 1025
 
 logging:
-  level:
-    org.springframework.security: DEBUG
-    root: INFO
+    level:
+        org.springframework.security: DEBUG
+        root: INFO
+debug: true

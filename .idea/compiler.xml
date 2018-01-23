@@ -10,6 +10,8 @@
         <module name="imooc-security-broswer" />
         <module name="imooc-security-core" />
         <module name="imooc-security-demo" />
+        <module name="imooc-security-local" />
+        <module name="imooc-security-third-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,7 +19,10 @@
       <module name="imooc-security-broswer" target="1.8" />
       <module name="imooc-security-core" target="1.8" />
       <module name="imooc-security-demo" target="1.8" />
+      <module name="imooc-security-local" target="1.8" />
+      <module name="imooc-security-third-web" target="1.8" />
       <module name="imooc-starter" target="1.8" />
+      <module name="spring-security-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

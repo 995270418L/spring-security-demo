@@ -11,7 +11,7 @@ spring:
                 useServerPrepStmts: true
         url: jdbc:mysql://localhost:3306/job?useUnicode=true&characterEncoding=utf8&useSSL=false
         username: root
-        password: shiyue
+        password: root
 server:
     port: 8888
 
@@ -29,3 +29,4 @@ logging:
   level:
     org.springframework.security: DEBUG
     root: INFO
+debug: true
