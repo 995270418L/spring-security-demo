@@ -8,11 +8,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
 import org.springframework.social.connect.UsersConnectionRepository;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @SpringBootApplication
+@RestController
 public class BroswerApplication{
 
     private static final Logger logger = LoggerFactory.getLogger(BroswerApplication.class);
@@ -24,6 +27,11 @@ public class BroswerApplication{
 
     private static void display(Environment environment) throws UnknownHostException {
         logger.info("\n-----------------------------------------------\nImooc Application: {} is Running;\tLocalUrl is : {}",new Object[]{environment.getProperty("spring.application.name"), InetAddress.getLocalHost().getHostAddress()+":"+environment.getProperty("server.port")});
+    }
+
+    @GetMapping("/index")
+    public String index(){
+        return "hello";
     }
 
 }

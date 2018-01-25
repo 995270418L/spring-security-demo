@@ -2,9 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/imooc-security-app" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/imooc-security-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/imooc-security-base" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/imooc-security-local" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/imooc-security-third-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/imooc-security-uaa" charset="UTF-8" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.imooc.utils.validate.processor;
 
+import com.imooc.utils.validate.ImageValidateCode;
 import com.imooc.utils.validate.ValidateCode;
 import com.imooc.utils.validate.ValidateCodeGenerator;
 import org.apache.commons.lang3.StringUtils;
@@ -9,10 +10,10 @@ import org.springframework.social.connect.web.SessionStrategy;
 import org.springframework.web.context.request.ServletWebRequest;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.Map;
 
 public abstract class ValidateCodeAbstractProcessor<T extends ValidateCode> implements ValidateCodeProcessor{
-
 
     private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();
 
@@ -41,7 +42,8 @@ public abstract class ValidateCodeAbstractProcessor<T extends ValidateCode> impl
     }
 
     public void saveValidateSession(ServletWebRequest request,T code){
-        sessionStrategy.setAttribute(request, VALIDATE_SESSION_KEY, code);
+        ValidateCode newCode = new ValidateCode(code.getCode(),code.getExpireTime());
+        sessionStrategy.setAttribute(request, VALIDATE_SESSION_KEY, newCode);
     }
 
     public abstract void validateProcessor(ServletWebRequest request,T code) throws IOException;

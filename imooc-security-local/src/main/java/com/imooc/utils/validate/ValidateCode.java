@@ -1,11 +1,12 @@
 package com.imooc.utils.validate;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
  *  验证码父类，包括邮箱验证码，短信验证码，图形验证码。
  */
-public class ValidateCode {
+public class ValidateCode implements Serializable{
 
     /**
      * 验证码
@@ -20,6 +21,11 @@ public class ValidateCode {
     public ValidateCode(String code, int expireTime) {
         this.code = code;
         this.expireTime = LocalDateTime.now().plusSeconds(expireTime);
+    }
+
+    public ValidateCode(String code, LocalDateTime expireTime) {
+        this.code = code;
+        this.expireTime = expireTime;
     }
 
     public String getCode() {

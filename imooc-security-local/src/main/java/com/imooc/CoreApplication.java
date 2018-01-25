@@ -47,7 +47,7 @@ public class CoreApplication implements CommandLineRunner{
     @Autowired
     private Map<String, ValidateCodeProcessor> validateCodeProcessor;
 
-    @GetMapping("hello")
+    @GetMapping("/hello")
     public String hello(){
         return "hello java springsecurity";
     }
@@ -69,9 +69,5 @@ public class CoreApplication implements CommandLineRunner{
 
     @Override
     public void run(String... strings) throws Exception {
-        System.out.println("#####################");
-        System.out.println("#####################");
-        System.out.println("#####################");
-        System.out.println(dataSource.getConnection());
     }
 }

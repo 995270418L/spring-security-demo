@@ -13,6 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
+import org.springframework.security.web.session.SimpleRedirectSessionInformationExpiredStrategy;
 
 import javax.sql.DataSource;
 
@@ -57,13 +58,21 @@ public class CoreSecurityConfigure extends WebSecurityConfigurerAdapter {
         validateSmsCodeFilter.setAuthenticationFailureHandler(imoocAuthenticationFailureHandler);
 
         http.formLogin()
-                .loginPage("/signIn.html").loginProcessingUrl("/login").successHandler(imoocAuthenticationSuccessfulhandler).failureHandler(imoocAuthenticationFailureHandler)
+                .loginPage("/signIn.html")
+                .loginProcessingUrl("/login")
+                .successHandler(imoocAuthenticationSuccessfulhandler).failureHandler(imoocAuthenticationFailureHandler)
                 .and()
-                .rememberMe()
-                .tokenRepository(persistentTokenRepository())
-                .tokenValiditySeconds(60)
-                .rememberMeCookieName("remember-me")
-                .userDetailsService(userDetailsService)
+                    .rememberMe()
+                    .tokenRepository(persistentTokenRepository())
+                    .tokenValiditySeconds(60)
+                    .rememberMeCookieName("remember-me")
+                    .userDetailsService(userDetailsService)
+                .and()
+                .sessionManagement()
+                    .maximumSessions(1)
+                    // .maxSessionsPreventsLogin(true) // 是否阻止session并发出现
+                    // .expiredSessionStrategy(...)   session 过期处理
+                    .and()
                 .and()
                 .addFilterBefore(validateSmsCodeFilter,UsernamePasswordAuthenticationFilter.class)
                 .addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class)

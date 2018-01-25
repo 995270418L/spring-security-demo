@@ -30,7 +30,7 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
                 .apply(springSocialConfigurer)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/login/**","/sign-in.html").permitAll()
+                .antMatchers("/login/**","/sign-in.html","/index/**").permitAll()
                 .anyRequest().authenticated();
     }
 }

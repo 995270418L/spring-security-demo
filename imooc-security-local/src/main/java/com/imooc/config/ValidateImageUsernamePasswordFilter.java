@@ -2,6 +2,7 @@ package com.imooc.config;
 
 import com.imooc.utils.ValidateException;
 import com.imooc.utils.validate.ImageValidateCode;
+import com.imooc.utils.validate.ValidateCode;
 import com.imooc.utils.validate.processor.ValidateCodeProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
@@ -43,7 +44,7 @@ public class ValidateImageUsernamePasswordFilter extends OncePerRequestFilter {
 
     private void validate(HttpServletRequest request) throws ServletRequestBindingException, ValidateException {
         ServletWebRequest servletWebRequest = new ServletWebRequest(request);
-        ImageValidateCode imageCode = (ImageValidateCode) sessionStrategy.getAttribute(new ServletWebRequest(request), ValidateCodeProcessor.VALIDATE_SESSION_KEY);
+        ValidateCode imageCode = (ValidateCode) sessionStrategy.getAttribute(new ServletWebRequest(request), ValidateCodeProcessor.VALIDATE_SESSION_KEY);
         String formCode = ServletRequestUtils.getStringParameter(request,"imageCode");
         if(StringUtils.isEmpty(formCode)){
             throw new ValidateException("验证码不能为空");

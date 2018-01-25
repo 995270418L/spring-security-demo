@@ -1,6 +1,5 @@
 package com.imooc.config.social;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.security.SocialAuthenticationFilter;
 import org.springframework.social.security.SpringSocialConfigurer;
 
@@ -8,7 +7,7 @@ import org.springframework.social.security.SpringSocialConfigurer;
  * @Author: steve
  * @Date: Created in 14:14 2018/1/22
  * @Description:
- *   处理访问路径前缀的配置类
+ *   处理第三方登陆的访问路径前缀的配置类
  * @Modified By:
  */
 public class QQSpringSocialConfigurer extends SpringSocialConfigurer {
@@ -23,6 +22,7 @@ public class QQSpringSocialConfigurer extends SpringSocialConfigurer {
     protected <T> T postProcess(T object) {
         SocialAuthenticationFilter socialAuthenticationFilter = (SocialAuthenticationFilter)super.postProcess(object);
         socialAuthenticationFilter.setFilterProcessesUrl(prefix);
+        socialAuthenticationFilter.setConnectionAddedRedirectUrl("/index");
         return super.postProcess(object);
     }
 }

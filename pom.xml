@@ -11,8 +11,8 @@
     <modules>
         <module>imooc-security-local</module>
         <module>imooc-security-third-web</module>
-        <module>imooc-security-app</module>
-        <module>imooc-security-demo</module>
+        <module>imooc-security-uaa</module>
+        <module>imooc-security-base</module>
     </modules>
 
     <parent>

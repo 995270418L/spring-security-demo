@@ -3,6 +3,7 @@ package com.imooc.config;
 import com.imooc.utils.ValidateException;
 import com.imooc.utils.validate.ImageValidateCode;
 import com.imooc.utils.validate.SmsValidateCode;
+import com.imooc.utils.validate.ValidateCode;
 import com.imooc.utils.validate.processor.ValidateCodeProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -45,7 +46,7 @@ public class ValidateSmsCodeFilter extends OncePerRequestFilter {
 
     private void validate(HttpServletRequest request) throws ServletRequestBindingException, ValidateException {
         ServletWebRequest servletWebRequest = new ServletWebRequest(request);
-        SmsValidateCode smsValidateCode = (SmsValidateCode) sessionStrategy.getAttribute(new ServletWebRequest(request), ValidateCodeProcessor.VALIDATE_SESSION_KEY);
+        ValidateCode smsValidateCode = (ValidateCode) sessionStrategy.getAttribute(new ServletWebRequest(request), ValidateCodeProcessor.VALIDATE_SESSION_KEY);
         String formCode = ServletRequestUtils.getStringParameter(request,"smsCode");
         if(StringUtils.isEmpty(formCode)){
             throw new ValidateException("验证码不能为空");
