@@ -4,8 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/imooc-security-base/imooc-security-base.iml" filepath="$PROJECT_DIR$/imooc-security-base/imooc-security-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-local/imooc-security-local.iml" filepath="$PROJECT_DIR$/imooc-security-local/imooc-security-local.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-security-sso-clientA/imooc-security-sso-clientA.iml" filepath="$PROJECT_DIR$/imooc-security-sso-clientA/imooc-security-sso-clientA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-security-sso-clientB/imooc-security-sso-clientB.iml" filepath="$PROJECT_DIR$/imooc-security-sso-clientB/imooc-security-sso-clientB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-security-sso-uaa/imooc-security-sso-uaa.iml" filepath="$PROJECT_DIR$/imooc-security-sso-uaa/imooc-security-sso-uaa.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-third-web/imooc-security-third-web.iml" filepath="$PROJECT_DIR$/imooc-security-third-web/imooc-security-third-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/imooc-security-uaa/imooc-security-uaa.iml" filepath="$PROJECT_DIR$/imooc-security-uaa/imooc-security-uaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-security-web-uaa/imooc-security-web-uaa.iml" filepath="$PROJECT_DIR$/imooc-security-web-uaa/imooc-security-web-uaa.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-security-demo.iml" filepath="$PROJECT_DIR$/spring-security-demo.iml" />
     </modules>
   </component>

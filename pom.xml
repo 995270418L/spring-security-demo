@@ -8,11 +8,15 @@
     <artifactId>spring-security-demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <modules>
         <module>imooc-security-local</module>
         <module>imooc-security-third-web</module>
-        <module>imooc-security-uaa</module>
+        <module>imooc-security-web-uaa</module>
         <module>imooc-security-base</module>
+        <module>imooc-security-sso-uaa</module>
+        <module>imooc-security-sso-clientA</module>
+        <module>imooc-security-sso-clientB</module>
     </modules>
 
     <parent>
