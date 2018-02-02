@@ -2,6 +2,7 @@ package com.imooc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: steve
@@ -10,9 +11,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Modified By:
  */
 @SpringBootApplication
+@RestController
 public class SsoUaaApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SsoUaaApplication.class);
     }
+
 }

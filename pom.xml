@@ -17,6 +17,11 @@
         <module>imooc-security-sso-uaa</module>
         <module>imooc-security-sso-clientA</module>
         <module>imooc-security-sso-clientB</module>
+        <module>imooc-security-sso-clientC</module>
+        <module>shiyue-steve-app</module>
+        <module>shiyue-steve-uaa</module>
+        <module>shiyue-steve-clientA</module>
+        <module>shiyue-steve-clientB</module>
     </modules>
 
     <parent>

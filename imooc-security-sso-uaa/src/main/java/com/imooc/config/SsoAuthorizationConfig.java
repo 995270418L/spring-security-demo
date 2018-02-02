@@ -14,37 +14,47 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 /**
  * @Author: steve
  * @Date: Created in 0:55 2018/1/26
- * @Description:
+ * @Description: JDBC的实现
  * @Modified By:
  */
 @Configuration
 @EnableAuthorizationServer
 public class SsoAuthorizationConfig extends AuthorizationServerConfigurerAdapter {
 
+    /**
+     * ============================================================================
+     * ============================================================================
+     * ============================================================================
+     *
+     *                          JWTokenStore 的配置
+     *
+     * ============================================================================
+     * ============================================================================
+     * ============================================================================
+     */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory().withClient("ClientA")
-                .secret("ClientASecret")
-                .authorizedGrantTypes("refresh_token","authorization_code")
-                .accessTokenValiditySeconds(7200)
-                .scopes("all")
-                .and()
-                .withClient("ClientB")
-                .secret("ClientBSecret")
-                .authorizedGrantTypes("refresh_token","authorization_code")
-                .accessTokenValiditySeconds(7200)
-                .scopes("all");
+        clients.inMemory()
+                .withClient("ClientA").secret("ClientASecret")
+                .accessTokenValiditySeconds(7200).scopes("all")
+                .authorizedGrantTypes("authorization_code").and()
+                .withClient("ClientC").secret("ClientCSecret")
+                .accessTokenValiditySeconds(7200).scopes("all")
+                .authorizedGrantTypes("authorization_code");
     }
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         // jwt 独有配置，客户端是否可以获取jwt的签名 key
-        security.tokenKeyAccess("isAuthenticated()");
+        security.
+                tokenKeyAccess("permitAll()").checkTokenAccess("isAuthenticated()").allowFormAuthenticationForClients();
     }
 
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+        // jwtTokenStore的设置
         endpoints.tokenStore(jwtTokenStore()).accessTokenConverter(jwtAccessTokenConverter());
+
     }
 
     @Bean
@@ -59,4 +69,56 @@ public class SsoAuthorizationConfig extends AuthorizationServerConfigurerAdapter
         return jwtAccessTokenConverter;
     }
 
+    /**
+     * ============================================================================
+     * ============================================================================
+     * ============================================================================
+     *
+     *                          JDBCTokenStore 的配置
+     *
+     * ============================================================================
+     * ============================================================================
+     * ============================================================================
+     */
+//
+//    @Autowired
+//    private DataSource dataSource;
+//
+//    @Autowired
+//    private AuthenticationManager authenticationManager;
+//
+//    @Override
+//    public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
+//        clients.jdbc(dataSource);
+//    }
+//
+//    @Override
+//    public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
+//        security.tokenKeyAccess("permitAll()").checkTokenAccess("isAuthenticated()").allowFormAuthenticationForClients();
+//    }
+//
+//    @Override
+//    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+//        endpoints.authenticationManager(authenticationManager)
+//                .tokenStore(tokenStore());
+//        DefaultTokenServices defaultTokenServices = new DefaultTokenServices();
+//        defaultTokenServices.setTokenStore(tokenStore());
+//        defaultTokenServices.setTokenEnhancer(endpoints.getTokenEnhancer());
+//        defaultTokenServices.setClientDetailsService(jdbcClientDetailsService());
+////        defaultTokenServices.setAccessTokenValiditySeconds( 60*60); // 1个小时
+//        defaultTokenServices.setSupportRefreshToken(true);
+//        endpoints.tokenServices(defaultTokenServices);
+//    }
+//
+//    @Bean
+//    @ConditionalOnMissingBean(name="jdbcClientDetailsService")
+//    public JdbcClientDetailsService jdbcClientDetailsService(){
+//        return new JdbcClientDetailsService(dataSource);
+//    }
+//
+//    @Bean
+//    @ConditionalOnMissingBean(name="tokenStore")
+//    public TokenStore tokenStore(){
+//        return new JdbcTokenStore(dataSource);
+//    }
 }

@@ -1,0 +1,22 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: sso-client-c
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      client-id: ClientC
+      client-secret: ClientCSecret
+      access-token-uri: http://127.0.0.1:8999/server/oauth/token
+      user-authorization-uri: http://127.0.0.1:8999/server/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://127.0.0.1:8999/server/oauth/token_key   # 需要根据这个地址去获取jwt key的签名，才能解析token
+      #token-info-uri: http://127.0.0.1:8999/server/oauth/check_token  # token 的可用性检测地址
+logging:
+  level:
+    org.springframework.security: debug
+debug: true

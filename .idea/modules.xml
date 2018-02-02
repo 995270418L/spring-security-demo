@@ -6,9 +6,14 @@
       <module fileurl="file://$PROJECT_DIR$/imooc-security-local/imooc-security-local.iml" filepath="$PROJECT_DIR$/imooc-security-local/imooc-security-local.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-sso-clientA/imooc-security-sso-clientA.iml" filepath="$PROJECT_DIR$/imooc-security-sso-clientA/imooc-security-sso-clientA.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-sso-clientB/imooc-security-sso-clientB.iml" filepath="$PROJECT_DIR$/imooc-security-sso-clientB/imooc-security-sso-clientB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-security-sso-clientC/imooc-security-sso-clientC.iml" filepath="$PROJECT_DIR$/imooc-security-sso-clientC/imooc-security-sso-clientC.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-sso-uaa/imooc-security-sso-uaa.iml" filepath="$PROJECT_DIR$/imooc-security-sso-uaa/imooc-security-sso-uaa.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-third-web/imooc-security-third-web.iml" filepath="$PROJECT_DIR$/imooc-security-third-web/imooc-security-third-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-security-web-uaa/imooc-security-web-uaa.iml" filepath="$PROJECT_DIR$/imooc-security-web-uaa/imooc-security-web-uaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiyue-steve-app/shiyue-steve-app.iml" filepath="$PROJECT_DIR$/shiyue-steve-app/shiyue-steve-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiyue-steve-clientA/shiyue-steve-clientA.iml" filepath="$PROJECT_DIR$/shiyue-steve-clientA/shiyue-steve-clientA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiyue-steve-clientB/shiyue-steve-clientB.iml" filepath="$PROJECT_DIR$/shiyue-steve-clientB/shiyue-steve-clientB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiyue-steve-uaa/shiyue-steve-uaa.iml" filepath="$PROJECT_DIR$/shiyue-steve-uaa/shiyue-steve-uaa.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-security-demo.iml" filepath="$PROJECT_DIR$/spring-security-demo.iml" />
     </modules>
   </component>

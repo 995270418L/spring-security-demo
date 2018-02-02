@@ -1,0 +1,30 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: steve-client-a
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+        data-source-properties:
+            cachePrepStmts: true
+            prepStmtCacheSize: 250
+            prepStmtCacheSqlLimit: 2048
+            useServerPrepStmts: true
+    url: jdbc:mysql://localhost:3306/job?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+debug: true
+logging:
+  level:
+    org.springframework.security: debug
+    root: debug
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://127.0.0.1:9999/oauth/me
+  basic:
+    enabled: false
+  user:
+    name: liu
+    password: 123456
