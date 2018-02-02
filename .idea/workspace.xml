@@ -2,36 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7054d3d2-7a42-4c3c-9e1e-f71dcfc90099" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imooc-security-sso-clientB/src/main/java/com/imooc/config/ClientAResourceServerConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imooc-security-sso-clientC/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imooc-security-sso-clientC/src/main/java/com/imooc/SSOClientCApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imooc-security-sso-clientC/src/main/resources/config/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imooc-security-sso-uaa/src/main/resources/db/init.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-app/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-app/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-app/src/main/java/com/steve/GatewayApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-app/src/main/java/com/steve/config/PreAuthenticationFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-app/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-clientA/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-clientA/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-clientA/src/main/java/com/steve/SteveClientAApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-clientA/src/main/java/com/steve/config/ClientResourceConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-clientA/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-clientB/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-clientB/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/SteveUaaApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/api/v1/UaaLoginController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaAuthorizationServerConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaResourceServerConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaSecurityConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaTokenService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/filter/UaaAuthenticationFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/jwt/UaaTokenEnhancer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/service/UaaUserDetailService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/utils/SecurityUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiyue-steve-uaa/src/main/resources/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-local/target/classes/com/imooc/CoreApplication.class" afterPath="$PROJECT_DIR$/imooc-security-local/target/classes/com/imooc/CoreApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-local/target/classes/com/imooc/config/CoreSecurityConfigure.class" afterPath="$PROJECT_DIR$/imooc-security-local/target/classes/com/imooc/config/CoreSecurityConfigure.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-local/target/classes/com/imooc/config/ValidateImageUsernamePasswordFilter.class" afterPath="$PROJECT_DIR$/imooc-security-local/target/classes/com/imooc/config/ValidateImageUsernamePasswordFilter.class" />
@@ -40,21 +10,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-local/target/classes/com/imooc/utils/validate/processor/ValidateCodeAbstractProcessor.class" afterPath="$PROJECT_DIR$/imooc-security-local/target/classes/com/imooc/utils/validate/processor/ValidateCodeAbstractProcessor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-third-web/target/classes/com/imooc/BroswerApplication.class" afterPath="$PROJECT_DIR$/imooc-security-third-web/target/classes/com/imooc/BroswerApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-third-web/target/classes/com/imooc/config/SecurityWebConfig.class" afterPath="$PROJECT_DIR$/imooc-security-third-web/target/classes/com/imooc/config/SecurityWebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-local/target/classes/config/application.yml" afterPath="$PROJECT_DIR$/imooc-security-local/target/classes/config/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-sso-clientA/src/main/java/com/imooc/SSOClientAApplication.java" afterPath="$PROJECT_DIR$/imooc-security-sso-clientA/src/main/java/com/imooc/SSOClientAApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-sso-clientA/src/main/resources/config/application.yml" afterPath="$PROJECT_DIR$/imooc-security-sso-clientA/src/main/resources/config/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-sso-clientB/src/main/java/com/imooc/SSOClientBApplication.java" afterPath="$PROJECT_DIR$/imooc-security-sso-clientB/src/main/java/com/imooc/SSOClientBApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-sso-clientB/src/main/resources/config/application.yml" afterPath="$PROJECT_DIR$/imooc-security-sso-clientB/src/main/resources/config/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-sso-uaa/pom.xml" afterPath="$PROJECT_DIR$/imooc-security-sso-uaa/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-sso-uaa/src/main/java/com/imooc/SsoUaaApplication.java" afterPath="$PROJECT_DIR$/imooc-security-sso-uaa/src/main/java/com/imooc/SsoUaaApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-sso-uaa/src/main/java/com/imooc/config/SsoAuthorizationConfig.java" afterPath="$PROJECT_DIR$/imooc-security-sso-uaa/src/main/java/com/imooc/config/SsoAuthorizationConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-sso-uaa/src/main/resources/config/application.yml" afterPath="$PROJECT_DIR$/imooc-security-sso-uaa/src/main/resources/config/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc-security-third-web/README.md" afterPath="$PROJECT_DIR$/imooc-security-third-web/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -103,112 +60,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserInfoTokenServices.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../maven-reposiroty/org/springframework/boot/spring-boot-autoconfigure/1.5.9.RELEASE/spring-boot-autoconfigure-1.5.9.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/security/oauth2/resource/UserInfoTokenServices.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UaaLoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/api/v1/UaaLoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-610">
-              <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OAuth2AuthenticationProcessingFilter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../maven-reposiroty/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/authentication/OAuth2AuthenticationProcessingFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="124" column="28" lean-forward="false" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="58" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UaaAuthenticationFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/filter/UaaAuthenticationFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SteveClientAApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiyue-steve-clientA/src/main/java/com/steve/SteveClientAApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientResourceConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiyue-steve-clientA/src/main/java/com/steve/config/ClientResourceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UaaResourceServerConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaResourceServerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UaaSecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -780,7 +632,7 @@
       <workItem from="1516898258859" duration="176000" />
       <workItem from="1516898445765" duration="354000" />
       <workItem from="1516898839874" duration="73976000" />
-      <workItem from="1517327029967" duration="11686000" />
+      <workItem from="1517327029967" duration="11808000" />
     </task>
     <task id="LOCAL-00001" summary="jwtToken over">
       <created>1516895020639</created>
@@ -796,11 +648,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516952331677</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="自定义实现Oauth2认证">
+      <created>1517558113784</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517558113784</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226693000" />
+    <option name="totallyTimeSpent" value="226815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -880,7 +739,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jwtToken over" />
     <MESSAGE value="oauth2 jwt sso 单点登陆" />
-    <option name="LAST_COMMIT_MESSAGE" value="oauth2 jwt sso 单点登陆" />
+    <MESSAGE value="自定义实现Oauth2认证" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义实现Oauth2认证" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1383,24 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaResourceServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/filter/UaaAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
@@ -1413,7 +1255,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shiyue-steve-clientA/src/main/java/com/steve/SteveClientAApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="332">
           <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding />
         </state>
@@ -1421,7 +1263,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shiyue-steve-clientA/src/main/java/com/steve/config/ClientResourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="359">
           <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
           <folding />
         </state>
@@ -1461,9 +1303,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+        <state relative-caret-position="1161">
+          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiyue-steve-uaa/src/main/java/com/steve/config/UaaSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
